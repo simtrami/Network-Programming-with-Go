@@ -31,9 +31,9 @@ mobi:  ## generate mobi
 
 publish: build pdf epub mobi  ## publish gitbook on github pages
 	cd _book && \
+	git init && \
 	git config user.name "publisher" && \
 	git config user.email "publisher@git.hub" && \
-	git init && \
 	git commit --allow-empty -m 'update gh-pages' && \
 	git checkout -b gh-pages && \
 	git add . && \
