@@ -1,4 +1,7 @@
 {
+    "title": "Network Progamming with Go",
+    "author": "Jan Newmarch",
+    "description": "An e-book on building network applications using the Google Go programming language (Golang)",
     "gitbook": "3.0.x",
     "pdf": {
         "toc": true,
