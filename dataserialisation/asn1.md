@@ -6,7 +6,7 @@ Two functions allow us to marshal and unmarshall data
 
 ```go
 func Marshal(val interface{}) ([]byte, os.Error)
-func Unmarshal(val interface{}, b []byte) (rest []byte, err os.Error)
+func Unmarshal(b []byte, val interface{}) (rest []byte, err os.Error)
 ```    
 
 The first marshals a data value into a serialised byte array, and the second unmarshalls it. However, the first argument of type `interface` deserves further examination. Given a variable of a type, we can marshal it by just passing its value. To unmarshall it, we need a variable of a named type that will match the serialised data. The precise details of this are discussed later. But we also need to make sure that the variable is allocated to memory for that type, so that there is actually existing memory for the unmarshalling to write values into.
