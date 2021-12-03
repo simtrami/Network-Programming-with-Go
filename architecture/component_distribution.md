@@ -8,7 +8,7 @@ A simple but effective way of decomposing many applications is to consider them 
 
 The *presentation component* is responsible for interactions with the user, both displaying data and gathering input. It may be a modern GUI interface with buttons, lists, menus, etc., or an older command-line style interface, asking questions and getting answers. The details are not important at this level.
 
-The *application logic* is responsible for interpreting the users' responses, for applying business rules, for preparing queries and managing responses from the their component.
+The *application logic* is responsible for interpreting the users' responses, for applying business rules, for preparing queries and managing responses from their component.
 
 The *data access* component is responsible for storing and retrieving data. This will often be through a database, but not necessarily. 
 
@@ -26,9 +26,9 @@ Based on this threefold decomposition of applications, Gartner considered how th
 
 ![gartner1](../assets/gartner1.gif)
 
-Modern mobile phones make good examples of this: due to limited memory they may store a small part of a database locally so that they can usual respond quickly. However, if data is required that is not held locally, then a request may be made to a remote database for that additional data.
+Modern mobile phones make good examples of this: due to limited memory they may store a small part of a database locally so that they can usually respond quickly. However, if required data is not held locally, then a request may be made to a remote database for the additional data.
 
-Google maps forms another good example. All of the maps reside on Google's servers. When one is requested by a user, the "nearby" maps are also downloaded into a small database in the browser. When the user moves the map a little bit, the extra bits required are already in the local store for quick response. 
+Google maps forms another good example. All of the maps reside on Google's servers. When one is requested by a user, the "nearby" maps are also downloaded into a small database in the browser. When the user moves the map a little bit, the extra bits required are already in the local storage for a faster experience. 
 
 ### Example: Network File Service
 
